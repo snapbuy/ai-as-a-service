@@ -4,14 +4,14 @@ custom:
   bucket: ${env:CHAPTER2_BUCKET}
   crawlerqueue: Chap2CrawlerQueue
   analysisqueue: Chap2AnalysisQueue
-  region: ${env:AWS_DEFAULT_REGION, 'ap-northeast-1'}
+  region: ${env:AWS_DEFAULT_REGION, 'ap-northeast-2'}
   accountid: ${env:AWS_ACCOUNT_ID}
 
 provider:
   name: aws
   runtime: nodejs16.x
   stage: dev
-  region: ${env:AWS_DEFAULT_REGION, 'eu-west-1'}
+  region: ${env:AWS_DEFAULT_REGION, 'ap-northeast-2'}
 
 resources:
   Resources:
